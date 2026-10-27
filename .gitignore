@@ -1,0 +1,32 @@
+# Machine-local state and credentials
+.DS_Store
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+.Renviron
+.env
+.env.*
+__pycache__/
+*.pyc
+.venv/
+
+# Generated tests, screenshots and local outputs
+/test-output/
+/screenshots/
+/tmp/
+/temp/
+*.log
+
+# Deny accidental additions of fitted models or uploaded data; allow app inputs.
+/data/*
+!/data/raw/
+/data/raw/*
+!/data/raw/pt16_emory_GEX_immune_FULL_v2.rds
+/results/*
+!/results/bayesian/
+/results/bayesian/*
+!/results/bayesian/current/
+/results/bayesian/current/*
+!/results/bayesian/current/emory_bayesian_v1_sensitivity_A_app_artifact.rds
+!/results/bayesian/current/emory_bayesian_dynamic_PC1_PC2_default_app_artifact.rds
